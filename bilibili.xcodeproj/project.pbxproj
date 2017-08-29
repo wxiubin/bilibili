@@ -12,6 +12,11 @@
 		290697351F55676700572EAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290697331F55676700572EAD /* Main.storyboard */; };
 		290697371F55676700572EAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 290697361F55676700572EAD /* Assets.xcassets */; };
 		2906973A1F55676700572EAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290697381F55676700572EAD /* LaunchScreen.storyboard */; };
+		290697441F55688900572EAD /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290697431F55688900572EAD /* TabbarController.swift */; };
+		2944F66C1F5590EE0002C064 /* LaunchImages-700-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2944F6681F5590EE0002C064 /* LaunchImages-700-568h@2x.png */; };
+		2944F66D1F5590EE0002C064 /* LaunchImages-800-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2944F6691F5590EE0002C064 /* LaunchImages-800-667h@2x.png */; };
+		2944F66E1F5590EE0002C064 /* LaunchImages-700@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2944F66A1F5590EE0002C064 /* LaunchImages-700@2x.png */; };
+		2944F66F1F5590EE0002C064 /* LaunchImages-800-Portrait-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2944F66B1F5590EE0002C064 /* LaunchImages-800-Portrait-736h@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		290697361F55676700572EAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		290697391F55676700572EAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2906973B1F55676700572EAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		290697431F55688900572EAD /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		2944F6681F5590EE0002C064 /* LaunchImages-700-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImages-700-568h@2x.png"; sourceTree = "<group>"; };
+		2944F6691F5590EE0002C064 /* LaunchImages-800-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImages-800-667h@2x.png"; sourceTree = "<group>"; };
+		2944F66A1F5590EE0002C064 /* LaunchImages-700@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImages-700@2x.png"; sourceTree = "<group>"; };
+		2944F66B1F5590EE0002C064 /* LaunchImages-800-Portrait-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImages-800-Portrait-736h@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +64,9 @@
 		2906972E1F55676700572EAD /* bilibili */ = {
 			isa = PBXGroup;
 			children = (
+				2944F6631F5590CA0002C064 /* Launch */,
 				2906972F1F55676700572EAD /* AppDelegate.swift */,
+				290697431F55688900572EAD /* TabbarController.swift */,
 				290697311F55676700572EAD /* ViewController.swift */,
 				290697331F55676700572EAD /* Main.storyboard */,
 				290697361F55676700572EAD /* Assets.xcassets */,
@@ -62,6 +74,17 @@
 				2906973B1F55676700572EAD /* Info.plist */,
 			);
 			path = bilibili;
+			sourceTree = "<group>";
+		};
+		2944F6631F5590CA0002C064 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				2944F6681F5590EE0002C064 /* LaunchImages-700-568h@2x.png */,
+				2944F66A1F5590EE0002C064 /* LaunchImages-700@2x.png */,
+				2944F6691F5590EE0002C064 /* LaunchImages-800-667h@2x.png */,
+				2944F66B1F5590EE0002C064 /* LaunchImages-800-Portrait-736h@3x.png */,
+			);
+			path = Launch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,7 +146,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2906973A1F55676700572EAD /* LaunchScreen.storyboard in Resources */,
+				2944F66F1F5590EE0002C064 /* LaunchImages-800-Portrait-736h@3x.png in Resources */,
 				290697371F55676700572EAD /* Assets.xcassets in Resources */,
+				2944F66C1F5590EE0002C064 /* LaunchImages-700-568h@2x.png in Resources */,
+				2944F66E1F5590EE0002C064 /* LaunchImages-700@2x.png in Resources */,
+				2944F66D1F5590EE0002C064 /* LaunchImages-800-667h@2x.png in Resources */,
 				290697351F55676700572EAD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				290697321F55676700572EAD /* ViewController.swift in Sources */,
+				290697441F55688900572EAD /* TabbarController.swift in Sources */,
 				290697301F55676700572EAD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,7 +307,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = iosgg.bilibili;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -293,7 +321,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = iosgg.bilibili;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
