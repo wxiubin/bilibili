@@ -15,6 +15,19 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    @IBAction func loginAction(_ sender: UIButton) {
+    }
+    
+    @IBAction func addRotateAction(_ sender: UIButton) {
+        self.definesPresentationContext = true
+        let vc = AddRotateAnimationController(nibName: "AddRotateAnimationController", bundle: nil)
+        vc.modalPresentationStyle = .overCurrentContext
+        self.tabBarController?.present(vc, animated: false, completion: {
+            
+        })
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

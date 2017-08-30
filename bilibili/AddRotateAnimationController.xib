@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddRotateAnimationController" customModule="bilibili" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brG-im-Hno">
+                    <rect key="frame" x="299" y="531" width="56" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="56" id="VVz-t9-HEt"/>
+                        <constraint firstAttribute="height" constant="56" id="dLg-sW-axs"/>
+                    </constraints>
+                    <state key="normal" image="tab_add_select"/>
+                    <connections>
+                        <action selector="closeAction:" destination="-1" eventType="touchUpInside" id="wHp-dC-ggQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Y7-fn-mWa">
+                    <rect key="frame" x="295" y="407" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="QBu-PY-cE9"/>
+                        <constraint firstAttribute="height" constant="40" id="rOS-n6-DzY"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="tab_home_select"/>
+                    <connections>
+                        <action selector="closeAction:" destination="-1" eventType="touchUpInside" id="bPx-mY-tw1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m3g-ah-AXc">
+                    <rect key="frame" x="155" y="547" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="GbP-Hb-vdy"/>
+                        <constraint firstAttribute="width" constant="40" id="kBd-qr-P5u"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="tab_mine_select"/>
+                    <connections>
+                        <action selector="closeAction:" destination="-1" eventType="touchUpInside" id="s5l-FT-2Zy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMD-KM-Lfc">
+                    <rect key="frame" x="195" y="447" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="FvA-a4-Svn"/>
+                        <constraint firstAttribute="height" constant="40" id="lJ1-gz-hDq"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="tab_explore_select"/>
+                    <connections>
+                        <action selector="closeAction:" destination="-1" eventType="touchUpInside" id="bbs-YM-SQM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="m3g-ah-AXc" secondAttribute="trailing" constant="180" id="3Y1-1x-Gem"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="brG-im-Hno" secondAttribute="trailing" constant="20" id="6kW-dE-QnV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="wMD-KM-Lfc" secondAttribute="bottom" constant="180" id="9kj-TE-Ere"/>
+                <constraint firstAttribute="bottom" secondItem="4Y7-fn-mWa" secondAttribute="bottom" constant="220" id="Pda-aI-CSx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="m3g-ah-AXc" secondAttribute="bottom" constant="80" id="Ul9-CP-5XR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4Y7-fn-mWa" secondAttribute="trailing" constant="40" id="YoL-Tg-eca"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="brG-im-Hno" secondAttribute="bottom" constant="80" id="wQa-I4-cub"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wMD-KM-Lfc" secondAttribute="trailing" constant="140" id="yCC-rJ-jLU"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="25.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tab_add_select" width="56" height="56"/>
+        <image name="tab_explore_select" width="36" height="36"/>
+        <image name="tab_home_select" width="32" height="24"/>
+        <image name="tab_mine_select" width="28" height="28"/>
+    </resources>
+</document>

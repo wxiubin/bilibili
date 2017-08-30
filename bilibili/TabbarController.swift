@@ -23,6 +23,7 @@ class TabbarController: UITabBarController {
         for title in ["home","explore","communicate","mine"] {
             let vc = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController() as! UINavigationController
             vc.viewControllers.first?.navigationItem.title = title
+            vc.navigationBar.setBackgroundImage(#imageLiteral(resourceName: "userCenter_income_bg"), for: .`default`)
             self.addChildViewController(vc)
         }
         
@@ -73,7 +74,15 @@ class TabbarController: UITabBarController {
                 btn.imageView?.transform = .identity
             })
         }else {
-            
+            self.definesPresentationContext = true
+            let vc = AddTranslationController(nibName: "AddTranslationController", bundle: nil)
+            vc.modalPresentationStyle = .overCurrentContext
+            vc.setActionBlock({ (idx) in
+                
+            })
+            self.present(vc, animated: false, completion: {
+                
+            })
         }
     }
     

@@ -17,6 +17,10 @@
 		2944F66D1F5590EE0002C064 /* LaunchImages-800-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2944F6691F5590EE0002C064 /* LaunchImages-800-667h@2x.png */; };
 		2944F66E1F5590EE0002C064 /* LaunchImages-700@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2944F66A1F5590EE0002C064 /* LaunchImages-700@2x.png */; };
 		2944F66F1F5590EE0002C064 /* LaunchImages-800-Portrait-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2944F66B1F5590EE0002C064 /* LaunchImages-800-Portrait-736h@3x.png */; };
+		29BFAD901F55B29300DA0A0A /* AddTranslationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BFAD8E1F55B29300DA0A0A /* AddTranslationController.swift */; };
+		29BFAD911F55B29300DA0A0A /* AddTranslationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29BFAD8F1F55B29300DA0A0A /* AddTranslationController.xib */; };
+		29BFAD941F568D3200DA0A0A /* AddRotateAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BFAD921F568D3200DA0A0A /* AddRotateAnimationController.swift */; };
+		29BFAD951F568D3200DA0A0A /* AddRotateAnimationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29BFAD931F568D3200DA0A0A /* AddRotateAnimationController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		2944F6691F5590EE0002C064 /* LaunchImages-800-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImages-800-667h@2x.png"; sourceTree = "<group>"; };
 		2944F66A1F5590EE0002C064 /* LaunchImages-700@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImages-700@2x.png"; sourceTree = "<group>"; };
 		2944F66B1F5590EE0002C064 /* LaunchImages-800-Portrait-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImages-800-Portrait-736h@3x.png"; sourceTree = "<group>"; };
+		29BFAD8E1F55B29300DA0A0A /* AddTranslationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTranslationController.swift; sourceTree = "<group>"; };
+		29BFAD8F1F55B29300DA0A0A /* AddTranslationController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTranslationController.xib; sourceTree = "<group>"; };
+		29BFAD921F568D3200DA0A0A /* AddRotateAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRotateAnimationController.swift; sourceTree = "<group>"; };
+		29BFAD931F568D3200DA0A0A /* AddRotateAnimationController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddRotateAnimationController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +74,12 @@
 			children = (
 				2944F6631F5590CA0002C064 /* Launch */,
 				2906972F1F55676700572EAD /* AppDelegate.swift */,
-				290697431F55688900572EAD /* TabbarController.swift */,
 				290697311F55676700572EAD /* ViewController.swift */,
+				290697431F55688900572EAD /* TabbarController.swift */,
+				29BFAD921F568D3200DA0A0A /* AddRotateAnimationController.swift */,
+				29BFAD931F568D3200DA0A0A /* AddRotateAnimationController.xib */,
+				29BFAD8E1F55B29300DA0A0A /* AddTranslationController.swift */,
+				29BFAD8F1F55B29300DA0A0A /* AddTranslationController.xib */,
 				290697331F55676700572EAD /* Main.storyboard */,
 				290697361F55676700572EAD /* Assets.xcassets */,
 				290697381F55676700572EAD /* LaunchScreen.storyboard */,
@@ -146,11 +158,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2906973A1F55676700572EAD /* LaunchScreen.storyboard in Resources */,
+				29BFAD951F568D3200DA0A0A /* AddRotateAnimationController.xib in Resources */,
 				2944F66F1F5590EE0002C064 /* LaunchImages-800-Portrait-736h@3x.png in Resources */,
 				290697371F55676700572EAD /* Assets.xcassets in Resources */,
 				2944F66C1F5590EE0002C064 /* LaunchImages-700-568h@2x.png in Resources */,
 				2944F66E1F5590EE0002C064 /* LaunchImages-700@2x.png in Resources */,
 				2944F66D1F5590EE0002C064 /* LaunchImages-800-667h@2x.png in Resources */,
+				29BFAD911F55B29300DA0A0A /* AddTranslationController.xib in Resources */,
 				290697351F55676700572EAD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,6 +178,8 @@
 			files = (
 				290697321F55676700572EAD /* ViewController.swift in Sources */,
 				290697441F55688900572EAD /* TabbarController.swift in Sources */,
+				29BFAD901F55B29300DA0A0A /* AddTranslationController.swift in Sources */,
+				29BFAD941F568D3200DA0A0A /* AddRotateAnimationController.swift in Sources */,
 				290697301F55676700572EAD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
