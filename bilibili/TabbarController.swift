@@ -29,7 +29,6 @@ class TabbarController: UITabBarController {
         
     }
     
-    
     func setupTabbar() -> Void {
         
         func createBtn(img:UIImage, selectImg:UIImage, tag:Int) -> UIButton {
@@ -78,7 +77,12 @@ class TabbarController: UITabBarController {
             let vc = AddTranslationController(nibName: "AddTranslationController", bundle: nil)
             vc.modalPresentationStyle = .overCurrentContext
             vc.setActionBlock({ (idx) in
-                
+                if idx > 0 {
+                    let vc = LoginViewController(nibName: "LoginViewController", bundle: nil)
+                    self.present(vc, animated: true, completion: {
+                        
+                    })
+                }
             })
             self.present(vc, animated: false, completion: {
                 

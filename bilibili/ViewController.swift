@@ -16,6 +16,14 @@ class ViewController: UIViewController {
     }
 
     @IBAction func loginAction(_ sender: UIButton) {
+        
+        let vc = LoginViewController(nibName: "LoginViewController", bundle: nil)
+        
+        vc.transitioningDelegate = LoginViewController.transitionAnimation
+        vc.modalPresentationStyle = .fullScreen
+        self.tabBarController?.present(vc, animated: true, completion: {
+            
+        })
     }
     
     @IBAction func addRotateAction(_ sender: UIButton) {
